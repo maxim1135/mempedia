@@ -1,0 +1,85 @@
+
+$header-bg: #2C3E50;
+$footer-bg: #34495E;
+$btn-color: #3498DB;
+$comment-bg: #ECF0F1;
+$font-color: #FFFFFF;
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.header {
+    background-color: $header-bg;
+    color: $font-color;
+}
+
+.footer {
+    background-color: $footer-bg;
+    color: $font-color;
+}
+
+.feed {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.post {
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.post-image {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.post-title {
+    margin-top: 1rem;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.btn-like, .btn-share, .btn-save {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $btn-color;
+    color: $font-color;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: darken($btn-color, 10%);
+    }
+}
+
+.comments {
+    margin-top: 1rem;
+    .comment {
+        padding: 0.5rem;
+        background-color: $comment-bg;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+        .comment-author {
+            font-weight: bold;
+        }
+    }
+}
