@@ -5,33 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mempedia - Home</title>
     <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/navbar.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Mempedia</h1>
-        <!-- Future navigation links/buttons can be added here -->
-    </header>
-
+    <nav class="navbar">
+        <div class="site-title">Mempedia</div>
+        <ul class="nav-items">
+            <li>
+                <a href="#section1">
+                    <span class="navbar-icon"><img src="/resources/icons/search.svg" alt="Search"></span>
+                    <span class="navbar-text">Search</span>
+                </a>
+            <li>
+                <a href="#section2">
+                    <span class="navbar-icon"><img src="/resources/icons/user.svg" alt="Account"></span>
+                    <span class="navbar-text">Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section3">
+                    <span class="navbar-icon"><img src="/resources/icons/sign-out.svg" alt="Logout"></span>
+                    <span class="navbar-text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <main class="feed">
-        <!-- Sample post structure. This can be repeated for multiple posts -->
-        <article class="post">
-            <img src="path_to_meme_image.jpg" alt="Meme Image" class="post-image">
-            <h2 class="post-title">Meme Title/Description</h2>
-            <div class="post-actions">
-                <button class="btn-like">Like</button>
-                <button class="btn-share">Share</button>
-                <button class="btn-save">Save</button>
-            </div>
-            <section class="comments">
-                <!-- Sample comment structure. This can be repeated for multiple comments -->
-                <div class="comment">
-                    <p class="comment-author">Username:</p>
-                    <p class="comment-text">This meme is hilarious!</p>
+        <div class="post-grid">
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
                 </div>
-            </section>
-        </article>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-card">
+                    <img src="/resources/images/img.png" alt="Meme Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><img src="/resources/icons/like.svg" alt="Like"></button>
+                    <button class="btn-share"><img src="/resources/icons/comment.svg" alt="Comment"></button>
+                    <button class="btn-save"><img src="/resources/icons/share.svg" alt="Share"></button>
+                </div>
+            </article>
+        </div>
     </main>
-
     <footer class="footer">
         <p>&copy; 2023 Mempedia. All rights reserved.</p>
     </footer>

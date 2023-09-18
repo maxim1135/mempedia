@@ -1,51 +1,73 @@
+@import "variables.scss";
 
-$header-bg: #2C3E50;
-$footer-bg: #34495E;
-$btn-color: #3498DB;
-$comment-bg: #ECF0F1;
-$font-color: #FFFFFF;
-
-
-
-body {
+body, html {
     font-family: Arial, sans-serif;
+    height: 100ivh;
     margin: 0;
     padding: 0;
-}
-
-.header, .footer {
-    padding: 1rem;
-    text-align: center;
-}
-
-
-.header {
-    background-color: $header-bg;
-    color: $font-color;
 }
 
 .footer {
     background-color: $footer-bg;
     color: $font-color;
+    position: relative;
+    top: $footer_height*2;
+    height: $footer_height;
+    text-align: center;
+    padding: 1rem;
 }
 
 .feed {
-    padding: 1rem;
-    max-width: 800px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: calc(100vh - #{$navbar-height});
+    padding: 2rem;
+    overflow-x: hidden;  // Prevent horizontal scrolling
+
+    .post-grid {
+        display: flex;
+        flex-wrap: wrap;  // Allow items to wrap onto the next line
+        gap: 1rem; // Spacing between grid items
+        justify-content: center;  // Center the items
+        width: calc(100% - #{$feed-padding} * 2);  // Adjust width to account for padding
+        max-width: 1500px;  // Limit the maximum width
+    }
 }
 
 .post {
+    flex: 1 0 $post-width;  // Grow to fill available space, but don't shrink below max-post-width
+    max-width: $post-width;
+    width: $post-width;
+    height: $post-height;
     border: 1px solid #e1e1e1;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;  // Adjust as needed, given the 'gap' in the post-grid
     border-radius: 5px;
 }
 
+.post-card {
+    height: 85%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: white;
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.post-card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: scale(1.05);
+}
+
 .post-image {
-    max-width: 100%;
-    display: block;
-    margin: auto;
+    margin: auto 1px;
 }
 
 .post-title {
@@ -62,24 +84,16 @@ body {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    background-color: $btn-color;
-    color: $font-color;
+    background-color: white;
     cursor: pointer;
+    text-align: center;
     transition: background-color 0.3s;
-    &:hover {
-        background-color: darken($btn-color, 10%);
+    img {
+        width: 20px;
+        height: 20px;
     }
-}
-
-.comments {
-    margin-top: 1rem;
-    .comment {
-        padding: 0.5rem;
-        background-color: $comment-bg;
-        border-radius: 5px;
-        margin-bottom: 0.5rem;
-        .comment-author {
-            font-weight: bold;
-        }
+    img:hover {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: scale(1.2);
     }
 }
