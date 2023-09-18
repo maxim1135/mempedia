@@ -2,14 +2,18 @@
   "name": "mempedia",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind": "npx tailwindcss -i ./src/styles/index.css -o ./build/сss/style.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "sharp": "^0.32.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
