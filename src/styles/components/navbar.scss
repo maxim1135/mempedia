@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .navbar {
   height: $navbar-height;
@@ -21,13 +21,20 @@
   margin: 0 0.5rem;
 }
 
-.nav-items a {
+.nav-items a, .site-title a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1rem;
   gap: 1.5rem;
   border-radius: 5px;
   transition: background-color 0.3s;
+}
+
+.site-title {
+  a {
+    font-weight: bold;
+    padding: 0;
+  }
 }
 
 .navbar-text {
@@ -55,9 +62,4 @@
   .nav-items a:hover {
     background-color: darken($navbar-bq, 10%);
   }
-}
-
-.site-title {
-  color: white;
-  font-weight: bold;
 }
