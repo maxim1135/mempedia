@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+@import "../components/input-form.scss";
+
+.account-input-form {
+  @extend .input-form;
+
+  max-width: 500px;
+  margin: 4rem auto 2rem;
+
+}
+
+.account-btn-save {
+  @include input-btn($btn-color);
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+
+.account-btn-delete {
+  @include input-btn($red-bth-color);
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 3px;
+}

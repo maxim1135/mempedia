@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.footer {
+  background-color: $footer-bg;
+  color: $font-color;
+  position: relative;
+  top: $footer_height*2;
+  height: $footer_height;
+  text-align: center;
+  padding: 1rem;
+}

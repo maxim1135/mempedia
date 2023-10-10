@@ -1,21 +1,5 @@
-@import "variables.scss";
+@import "../variables.scss";
 
-body, html {
-    font-family: Arial, sans-serif;
-    height: 100ivh;
-    margin: 0;
-    padding: 0;
-}
-
-.footer {
-    background-color: $footer-bg;
-    color: $font-color;
-    position: relative;
-    top: $footer_height*2;
-    height: $footer_height;
-    text-align: center;
-    padding: 1rem;
-}
 
 .feed {
     display: flex;

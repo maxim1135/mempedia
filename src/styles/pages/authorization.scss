@@ -1,0 +1,28 @@
+@import "../variables.scss";
+
+@import "../components/input-form.scss";
+
+
+.authorization-input-form {
+  @extend .input-form;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  margin-top: 1rem;
+  justify-content: center;
+
+}
+
+.auth-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.auth-btn-group-btn {
+  @include input-btn($btn-color);
+  width: 60px;
+}
