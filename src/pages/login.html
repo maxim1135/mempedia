@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authorization</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <script type="module" src="../scripts/authorization.js"></script>
 </head>
 <body>
-<form action="/login" method="post" class="authorization-input-form">
+<form id="login-form" method="post" class="authorization-input-form">
     <h2>Welcome to Mempedia</h2>
     <div class="input-form-group">
         <label for="username">Username or Email:</label>
@@ -18,8 +19,8 @@
         <input type="password" id="password" name="password" required>
     </div>
     <div class="auth-btn-group">
-        <a class="auth-btn-group-btn" href="index.html">Log In</a>
-        <a class="auth-btn-group-btn" href="registration.html">Register</a>
+        <button class="auth-btn-group-btn" id="login-button" type="submit">Log In</button>
+        <a class="auth-btn-group-btn" href="registration.html">Sign in</a>
         <a class="auth-btn-group-btn" href="index.html">Guest</a>
     </div>
 </form>

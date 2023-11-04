@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script type="module" src="../scripts/registration.js"></script>
+</head>
+<body>
+<form method="post" id='registration-form' class="authorization-input-form">
+    <h2>Welcome to Mempedia</h2>
+    <div class="input-form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div class="input-form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="input-form-group">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="input-form-group">
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName">
+    </div>
+    <div class="input-form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div class="input-form-group">
+        <label for="confirmPass">Confirm password:</label>
+        <input type="password" id="confirmPass" name="confirmPass" required>
+    </div>
+    <div class="auth-btn-group">
+        <button class="auth-btn-group-btn" id="registration-button" type="submit">Sign in</button>
+    </div>
+</form>
+</body>
+

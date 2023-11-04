@@ -29,6 +29,10 @@
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+.nav-items button {
+  @extend .nav-items a
+}
+
 
 .site-title {
   a {

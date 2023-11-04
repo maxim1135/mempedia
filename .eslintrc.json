@@ -1,0 +1,21 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "google"
+//        "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+    ],
+    "rules": {
+        "max-len": "off",
+        "indent": ["error", 4],
+        "require-jsdoc": "off"
+    }
+}
