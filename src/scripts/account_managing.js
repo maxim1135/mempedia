@@ -1,7 +1,6 @@
 const setAccount = () => {
     const form = document.querySelector('#current-user-account-form');
     const account = JSON.parse(sessionStorage.getItem('stored_account'));
-    console.log(account)
     if (account) {
         Object.entries(account).forEach(
             (entry) => {

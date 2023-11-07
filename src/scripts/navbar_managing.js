@@ -1,6 +1,6 @@
 import {API} from '/mempedia/src/scripts/api_handler.js';
 import {
-    frontEndBaseUrl, getUserEndpoint, accountUrlEndpoint, loginUrlEndpoint
+    frontEndBaseUrl, getUserEndpoint, accountUrlEndpoint, loginUrlEndpoint,
 } from '/mempedia/src/scripts/variables.js';
 
 const loadAccount = () => {
@@ -35,7 +35,7 @@ const logout = () => {
         'click', () => {
             location.replace(frontEndBaseUrl + loginUrlEndpoint);
             sessionStorage.clear();
-        }
+        },
     );
 };
 

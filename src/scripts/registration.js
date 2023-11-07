@@ -23,7 +23,9 @@ const register = () => {
                         location.replace(frontEndBaseUrl + loginUrlEndpoint);
                     }
                 },
-            ).catch(() => {});
+            ).catch(() => {
+                alert("You have entered incorrect data")
+            });
         },
     );
 };

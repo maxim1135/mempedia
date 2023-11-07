@@ -17,7 +17,9 @@ const login = () => {
                         location.replace(frontEndBaseUrl + homeUrlEndpoint);
                     }
                 },
-            ).catch(() => {});
+            ).catch(() => {
+                alert("Authorization has failed. Please retry")
+            });
         },
     );
 };
